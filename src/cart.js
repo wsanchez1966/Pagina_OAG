@@ -124,11 +124,20 @@ export async function addToCart(item) {
       addProductToCart(newItem)
       showToast('Objeto añadido correctamente.', '../pages/cart.html')
     } else {
-      showToast(
-        `El producto ya existe en el carrito, se actualizó su cantidad a: ${quantity}`,
-        '../pages/cart.html'
-      )
-      updateQuantity(newItem, quantity)
+      const existingItem = cart.detail[index]
+      if (existingItem.deleted) {
+        existingItem.deleted = false
+        existingItem.quantity = quantity
+        saveCart(cart)
+        updateOrder(cart)
+        showToast('Objeto añadido correctamente.', '../pages/cart.html')
+      } else {
+        showToast(
+          `El producto ya existe en el carrito, se actualizó su cantidad a: ${quantity}`,
+          '../pages/cart.html'
+        )
+        updateQuantity(newItem, quantity)
+      }
     }
   } else {
     showToast('La cantidad debe ser mayor a 0')

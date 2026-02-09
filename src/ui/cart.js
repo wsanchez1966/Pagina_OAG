@@ -563,10 +563,11 @@ function createProductCard(item) {
   $card.classList.add('cart__card')
 
   const $image = document.createElement('img')
-  const url = item.url ? item.url[0] : ''
+  const images = item.images || item.url
+  const url = images ? images[0] : ''
   if (url) {
     if (url.includes('G:\\FerozoWebHosting')) {
-      const source = item.url[0]
+      const source = images[0]
         .split('\\')
         .slice(2)
         .filter(item => {
