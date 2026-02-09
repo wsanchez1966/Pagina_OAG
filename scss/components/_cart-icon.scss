@@ -1,0 +1,24 @@
+.cart__icon {
+  text-decoration: none;
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  background-color: $secondary-color-300;
+  border-radius: 50%;
+  right: 3rem;
+  bottom: 5rem;
+  color: $dark-grey;
+  @include flex(column, center, center);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    background-color: $secondary-color-400;
+    color: $black;
+  }
+}

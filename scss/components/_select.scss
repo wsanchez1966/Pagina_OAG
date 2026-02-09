@@ -1,0 +1,35 @@
+.select {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: gray;
+  border: none;
+  max-width: 230px;
+}
+
+.select-lg {
+  width: 90%;
+  max-width: 100%;
+}
+
+.discount-container {
+  position: relative;
+  .percentage {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(50%, -50%);
+  }
+}
+
+
+@media (min-width: 48rem) {
+  .select {
+    width: 25rem;
+    max-width: 100%;
+    padding: 0.5rem 2rem;
+  }
+
+  .select-lg {
+    width: 100%;
+  }
+}

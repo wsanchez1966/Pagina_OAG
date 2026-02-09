@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://www.oagsa.com/</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Tienda - Catálogo de productos -->
+  <url>
+    <loc>https://www.oagsa.com/pages/store.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Acerca de -->
+  <url>
+    <loc>https://www.oagsa.com/pages/about-us.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://www.oagsa.com/pages/contact.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Login -->
+  <url>
+    <loc>https://www.oagsa.com/pages/log-in.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Dashboard/Funciones -->
+  <url>
+    <loc>https://www.oagsa.com/pages/dashboard.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Carrito de compras -->
+  <url>
+    <loc>https://www.oagsa.com/pages/cart.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fichas de productos -->
+  <url>
+    <loc>https://www.oagsa.com/pages/FichasProductos.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Certificados individuales -->
+  <url>
+    <loc>https://www.oagsa.com/certificados/Fichas/MOBI_M040010A.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oagsa.com/certificados/Fichas/MOBI_M040020A.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,39 @@
+# robots.txt para OAGSA - www.oagsa.com
+# Generado el 2025-10-30
+
+# Permitir acceso a todos los bots
+User-agent: *
+Allow: /
+
+# Bloquear directorios de desarrollo y código fuente
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /__tests__/
+Disallow: /cypress/
+
+# Bloquear archivos de configuración
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /*.config.js$
+Disallow: /CLAUDE.md
+Disallow: /.gitignore
+Disallow: /.eslintrc.js
+Disallow: /.prettierrc
+
+# Bloquear archivos SCSS (permitir solo CSS compilado)
+Disallow: /styles/*.scss$
+
+# Bloquear archivos de mapeo y temporales
+Disallow: /*.map$
+Disallow: /temp/
+Disallow: /tmp/
+
+# Permitir explícitamente páginas importantes
+Allow: /index.html
+Allow: /pages/
+Allow: /styles/*.css$
+Allow: /images/
+Allow: /certificados/
+
+# Ubicación del sitemap
+Sitemap: https://www.oagsa.com/sitemap.xml

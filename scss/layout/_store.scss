@@ -1,0 +1,192 @@
+.store-container {
+  position: relative;
+  margin-inline: auto;
+  width: 95%;
+  min-height: 10vh;
+  max-width: 1200px;
+
+  .store__dolar {
+    @include flex(row, center, center);
+
+    #dolar {
+      background-color: $slate;
+      padding: 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+
+  .store__search__select {
+    @include flex(column, center, center);
+    gap: 1rem;
+    width: 100%;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .store {
+    width: 100%;
+  }
+
+  .store__rubros__items {
+    @include flex(column, center, center);
+    gap: 1rem;
+    gap: 0.25rem;
+    list-style: none;
+
+    .store__rubros__item {
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      transition: 300ms ease-in-out all;
+      font-weight: bold;
+      &:hover {
+        color: $secondary-color-400;
+      }
+      &.active {
+        color: $secondary-color-400;
+      }
+    }
+  }
+
+  .store__button-search {
+    @include flex(row, center, center);
+    gap: 1rem;
+  }
+
+  .store__hero {
+    width: 100%;
+    height: 150px;
+    background-color: $grey;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .select-store {
+    @include flex(row, space-between, center);
+    gap: 1rem;
+    background-color: $secondary-color-300;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.625rem;
+
+    select {
+      color: black;
+    }
+  }
+
+  .store__search__input {
+    @include flex(column, center, center);
+    width: 100%;
+
+    .search__input {
+      @include flex(row, center, center);
+      gap: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+
+      input {
+        flex-shrink: 0;
+        padding: 0.75rem;
+        border-radius: 2rem;
+        border: none;
+        max-width: 275px;
+      }
+
+      button {
+        flex-basis: 10%;
+        border: none;
+        color: black;
+        cursor: pointer;
+      }
+    }
+
+    .store__search__input__select {
+      @include flex(row, center, center);
+      gap: 1rem;
+
+      select {
+        background-color: $secondary-color-400;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        max-width: 100px;
+        font-size: var(--fs-200);
+        color: black;
+        font-weight: $fw-semi-bold;
+      }
+    }
+  }
+
+  .store__rubros__desktop {
+    @include flex(row, center, center);
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-weight: bold;
+
+    .store__rubros__desktop__items {
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+
+      &.active {
+        background-color: $secondary-color-400;
+      }
+    }
+  }
+}
+
+@media (min-width: 45rem) {
+  .store-container .store {
+    @include flex(row, center, stretch);
+
+    & > .store__search {
+      @include flex(column, space-between, center);
+      flex-grow: 0;
+      gap: 1rem;
+      flex-basis: 80%;
+
+      & > .store__search__select {
+        @include flex(row, center, center);
+        gap: 1rem;
+        width: 100%;
+
+        & > div {
+          width: 100%;
+        }
+      }
+    }
+
+    & > .store__rubros__items {
+      flex-basis: 20%;
+    }
+  }
+}
+
+@media (min-width: 55rem) {
+  .store-container {
+    .store__button-search {
+      flex-direction: row-reverse;
+    }
+    .store__search__input {
+      .search__input {
+        flex-direction: row-reverse;
+
+        input {
+          max-width: 600px;
+          padding-inline: 1rem;
+        }
+      }
+
+      .store__search__input__select {
+        select {
+          min-width: 200px;
+          padding: 1rem 2rem;
+          font-size: var(--fs-300);
+          text-align: center;
+        }
+      }
+    }
+  }
+}
