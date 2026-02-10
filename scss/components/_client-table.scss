@@ -12,6 +12,18 @@
     gap: 1rem;
 }
 
+.note-select-col {
+    width: 2.5rem;
+    text-align: center;
+
+    input[type="checkbox"] {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+        accent-color: $secondary-color-400;
+    }
+}
+
 .orders__table__row {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
